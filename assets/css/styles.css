@@ -224,7 +224,7 @@ img{
   color: #fff;
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
-  border-radius: .10rem;
+  border-radius: 50%;
 }
 .button:hover{
   box-shadow: 0 10px 36px rgba(0,0,0,.15);
