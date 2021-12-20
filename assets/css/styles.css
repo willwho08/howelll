@@ -9,7 +9,7 @@
 /*===== Colores =====*/
 :root{
   --first-color: #6C56E1;
-  --second-color: #0E2431;
+  --second-color: #000000;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -256,6 +256,7 @@ img{
 }
 .skills__text{
   margin-bottom: var(--mb-4);
+  text-align: justify;
 }
 .skills__data{
   display: flex;
