@@ -40,10 +40,9 @@
 #digital-clock {
  background-color: #fff;
  width: 35%;
- font-family: 'Open Sans Condensed', sans-serif;
+ font-family: 'Open Sans Condensed', 'bold', sans-serif;
  font-size: 30px;
- font-style: bold;
- text-align: right;
+ text-align: left;
 }
 
 
