@@ -37,21 +37,17 @@
   --mb-6: 3rem;
 }
 
-.clock {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-align: top;
-    transform: translateX(-50%) translateY(-50%);
-    color: #000000;
-    font-size: 30px;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 5px;
-   
-
-
+#digital-clock {
+ background-color: #66ffff;
+ width: 35%;
+ margin: auto;
+ padding-top: 50px;
+ padding-bottom: 50px;
+ font-family: 'Open Sans Condensed', sans-serif;
+ font-size: 64px;
+ text-align: center;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 
 
 
