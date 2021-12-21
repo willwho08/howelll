@@ -34,37 +34,52 @@ const sr = ScrollReveal({
 });
 
 
-
-function showTime(){
-    var date = new Date();
-    var h = date.getHours(); // 0 - 23
-    var m = date.getMinutes(); // 0 - 59
-    var s = date.getSeconds(); // 0 - 59
-    var session = "AM";
-    
-    if(h == 0){
-        h = 12;
-    }
-    
-    if(h > 12){
-        h = h - 12;
-        session = "PM";
-    }
-    
-    h = (h < 10) ? "0" + h : h;
-    m = (m < 10) ? "0" + m : m;
-    s = (s < 10) ? "0" + s : s;
-    
-    var time = h + ":" + m + ":" + s + " " + session;
-    document.getElementById("MyClockDisplay").innerText = time;
-    document.getElementById("MyClockDisplay").textContent = time;
-    
-    setTimeout(showTime, 1000);
-    
+function Time() {
+ // Creating object of the Date class
+ var date = new Date();
+ // Get current hour
+ var hour = date.getHours();
+ // Get current minute
+ var minute = date.getMinutes();
+ // Get current second
+ var second = date.getSeconds();
+ // Variable to store AM / PM
+ var period = "";
+ // Assigning AM / PM according to the current hour
+ if (hour >= 12) {
+ period = "PM";
+ } else {
+ period = "AM";
+ }
+ // Converting the hour in 12-hour format
+ if (hour == 0) {
+ hour = 12;
+ } else {
+ if (hour > 12) {
+ hour = hour - 12;
+ }
+ }
+ // Updating hour, minute, and second
+ // if they are less than 10
+ hour = update(hour);
+ minute = update(minute);
+ second = update(second);
+ // Adding time elements to the div
+ document.getElementById("digital-clock").innerText = hour + " : " + minute + " : " + second + " " + period;
+ // Set Timer to 1 sec (1000 ms)
+ setTimeout(Time, 1000);
 }
-
-showTime();
-
+ // Function to update time elements if they are less than 10
+ // Append 0 before time elements if they are less than 10
+function update(t) {
+ if (t < 10) {
+ return "0" + t;
+ }
+ else {
+ return t;
+ }
+}
+Time();
 
 
 /*SCROLL HOME*/
