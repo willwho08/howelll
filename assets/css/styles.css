@@ -41,7 +41,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    align-item: top;
+    text-align: top;
     transform: translateX(-50%) translateY(-50%);
     color: #000000;
     font-size: 30px;
