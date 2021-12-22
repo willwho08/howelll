@@ -12,6 +12,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.2.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
 <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.2.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
 <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
         <title>Howell</title>
@@ -29,11 +30,13 @@
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://www.google.com/recaptcha/api.js?render=6Lf7ULkdAAAAAGTKMrVQ6PF7dvVrEl6CPteyj3Uf"></script>
 
-<script>
+swal("Write your name:", {
+  content: "input",
+})
+.then((value) => {
+  swal(`Hello ${value}, ano kamusta na? HAHAHA`);
+});
 
-        alert("Hoy ano ginagawa mo ha!? ");
-
-    </script>
 <style>
 
 
