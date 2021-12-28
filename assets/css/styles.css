@@ -10,6 +10,8 @@
 :root{
   --first-color: #6C56E1;
   --second-color: #000000;
+ --background: #4285f4;
+  --primary-color: #000;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -467,4 +469,41 @@ img{
   .home__img{
     right: 10%;
   }
+:root {
+  //--background: #121621;
+  //--primary-color: rgba(39, 94, 254, 1);
+  --background: #4285f4;
+  --primary-color: #000;
+}
+
+body {
+  background: var(--background);
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  height: 100vh;
+  width: 100vw;
+  animation: lift 0.8s ease-in-out;
+  animation-delay: 1.6s;
+  animation-fill-mode: forwards;
+}
+
+.title {
+  font-size: 81px;
+  color: #fff;
+  text-align: center;
+  font-family: "Lexend Deca", sans-serif;
+
 }
