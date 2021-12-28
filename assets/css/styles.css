@@ -469,12 +469,6 @@ img{
   .home__img{
     right: 10%;
   }
-:root {
-  //--background: #121621;
-  //--primary-color: rgba(39, 94, 254, 1);
-  --background: #4285f4;
-  --primary-color: #000;
-}
 
 body {
   background: var(--background);
