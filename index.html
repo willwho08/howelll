@@ -51,7 +51,8 @@ src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="zTN
 
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://www.google.com/recaptcha/api.js?render=6Lf7ULkdAAAAAGTKMrVQ6PF7dvVrEl6CPteyj3Uf"></script>
-
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+ 
 
 <style>
 
@@ -68,6 +69,8 @@ src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="zTN
 
     </head>
     <body>
+<div id="splash" style="display:none;"><img src="assets/img/logo.png" alt="Howell"/></div>
+
         <!--===== HEADER =====-->
         <header class="l-header">
             <nav class="nav bd-grid">
@@ -351,5 +354,12 @@ src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="zTN
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+<script>
+      // Slowly fade in image (5 seconds) and then slide it up (2 seconds).
+      $().ready(function() {
+        $("#splash").fadeIn(5000).slideUp(2000);
+      });
+
+    </script>
     </body>
 </html>
